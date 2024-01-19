@@ -8,3 +8,5 @@ let email = "anjana@gmail.com"
 city = "Hajipur"
 
 console.table([id, Name, email, city])
+
+//Data Types
