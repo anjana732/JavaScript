@@ -50,11 +50,35 @@ const var1 = new String("Anjana")
 // console.log(var1.charAt(2))
 // console.log(var1.indexOf('j'))
 // console.log(var1.length)
-console.log(var1.substring(0,4))
-console.log(var1.slice(-2, 5))
+// console.log(var1.substring(0,4))
+// console.log(var1.slice(-2, 5))
 const newString = "       Anjana        "
-console.log(newString.trim())
-const url = "https://Anjana.com"
-console.log(url.replace('Anjana', 'singh'))
-const var2 = "anjana Kumari singh"
-console.log(var2.split(" "))
+// console.log(newString.trim())
+ const url = "https://Anjana.com"
+// console.log(url.replace('Anjana', 'singh'))
+ const var2 = "anjana Kumari singh"
+// console.log(var2.split(" "))
+
+//Numbers and maths
+
+const number = 1234
+// console.log(typeof (number.toString()))
+// console.log(number.toFixed(2))
+const newNumber = 1234.567
+// console.log(newNumber.toPrecision(5))
+// console.log(newNumber.toLocaleString('en-IN'))
+
+console.log(Math.abs(-8))
+console.log(Math.round(8.7))
+console.log(Math.round(8.4))
+console.log(Math.ceil(4.2))
+console.log(Math.floor(4.9))
+
+console.log(Math.random())
+console.log((Math.random()*10) + 1)
+console.log(Math.floor((Math.random()*10) + 1))
+
+const min = 10
+const max = 20
+
+console.log(Math.floor(Math.random()*(max )))
