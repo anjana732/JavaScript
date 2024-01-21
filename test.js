@@ -93,11 +93,35 @@ let myDate = new Date()
 // console.log(myDate.toLocaleDateString())
 // console.log(myDate.toLocaleString())
 let myCreatedDate = new Date(2023, 0, 7, 5,30)
-console.log(myCreatedDate.toLocaleString())
+//console.log(myCreatedDate.toLocaleString())
 
 let newDate = new Date("2023-01-12")
-console.log(newDate.toString())
+//console.log(newDate.toString())
 
 //console.log(Date.now())
 let myNewDate = Date.now()
-console.log(myNewDate.getTim)
+//console.log(myNewDate.getTim)
+
+//Arrays in js 
+
+const myArray = [9,8,2,4,5]
+
+const newArray = new Array(2,6,8,0,5)
+
+//myArray.push(10)
+
+//console.log(myArray)
+
+//myArray.pop()
+//console.log(myArray)
+//console.log(newArray)
+
+//myArray.unshift(16)
+//myArray.shift()
+console.log(myArray)
+console.log(myArray.slice(1, 3))
+console.log(myArray)
+
+myArray.splice(1, 3)
+console.log(myArray)
+
