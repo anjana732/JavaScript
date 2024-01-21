@@ -142,11 +142,55 @@ const myNewArray = [1,3, [8,9],6,7,[4,5,[2,8],1],7]
 const flatArray = myNewArray.flat(Infinity)
 //console.log(flatArray)
 
-console.log(Array.isArray("Anjana"))
-console.log(Array.from("Anjana"))
+// console.log(Array.isArray("Anjana"))
+// console.log(Array.from("Anjana"))
 const var3 = 100
 const var4 = 200
 const var5 = "Anjana"
 const var6 = 300
 
-console.log(Array.of(var3,var4 , var5, var6))
+// console.log(Array.of(var3,var4 , var5, var6))
+
+//objects in js
+/*Declaration of objects 
+Declaration of object have two ways 
+1. As Variable(Not singleton)
+2. Using Constructor(Singleton)
+*/
+const mySym = Symbol("key1")
+const myObject = {
+    name: "anjana",
+    "Full name" : "Anjana Singh",
+    age: 22,
+    email: "anjana@gmail.com",
+    city: "hajipur",
+    isLoggedIn: true,
+    weeks: ["Monday", "tuesday", "Wednesday"],
+    [mySym] : "key"
+}
+
+/*Accessing the object
+There are two ways of accessing object member in JS
+1. By dot operator
+2. By [] : This is used in the case when key is declared as string and contain whitespaces. 
+This is also used when we want to use symbol datatype in our object.
+*/
+// console.log(myObject.email)
+// console.log(myObject["email"]) //internally key is stored in string format only
+// console.log(myObject["Full name"])
+// console.log(myObject[mySym])
+myObject.email = "anjanasingh@gmail.com"
+//console.log(myObject)
+//Object.freeze(myObject) // After using freeze we cat make any change to our object
+myObject.email = "anjana@hotmail.com"
+//console.log(myObject)
+
+myObject.newFunc = function(){
+    console.log("Hello World")
+}
+myObject.newFunc()
+
+myObject.myFunc = function(){
+    console.log(`hello my name is ${this["Full name"]}`)
+}
+myObject.myFunc()
