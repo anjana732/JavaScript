@@ -118,10 +118,35 @@ const newArray = new Array(2,6,8,0,5)
 
 //myArray.unshift(16)
 //myArray.shift()
-console.log(myArray)
-console.log(myArray.slice(1, 3))
-console.log(myArray)
+// console.log(myArray)
+// console.log(myArray.slice(1, 3))
+// console.log(myArray)
 
 myArray.splice(1, 3)
-console.log(myArray)
+// console.log(myArray)
 
+const girls = ["anjana", "siya", "Riya"]
+const boys = ["Ram", "Shyam", "Raju"]
+
+//girls.push(boys)
+//console.log(girls)
+
+// const newMember = girls.concat(boys)
+// console.log(newMember)
+//spread operator
+const new_Member = [...girls, ...boys]
+//console.log(new_Member)
+
+const myNewArray = [1,3, [8,9],6,7,[4,5,[2,8],1],7]
+
+const flatArray = myNewArray.flat(Infinity)
+//console.log(flatArray)
+
+console.log(Array.isArray("Anjana"))
+console.log(Array.from("Anjana"))
+const var3 = 100
+const var4 = 200
+const var5 = "Anjana"
+const var6 = 300
+
+console.log(Array.of(var3,var4 , var5, var6))
