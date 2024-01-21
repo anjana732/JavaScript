@@ -154,7 +154,7 @@ const var6 = 300
 //objects in js
 /*Declaration of objects 
 Declaration of object have two ways 
-1. As Variable(Not singleton)
+1. Object literal(Not singleton)
 2. Using Constructor(Singleton)
 */
 const mySym = Symbol("key1")
