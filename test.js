@@ -188,9 +188,28 @@ myObject.email = "anjana@hotmail.com"
 myObject.newFunc = function(){
     console.log("Hello World")
 }
-myObject.newFunc()
+//myObject.newFunc()
 
 myObject.myFunc = function(){
     console.log(`hello my name is ${this["Full name"]}`)
 }
-myObject.myFunc()
+//myObject.myFunc()
+
+const obj1 = {
+    1: "a",
+    2: "b"
+}
+const obj2 ={
+    3: "c",
+    4: "d"
+}
+//const obj = Object.assign({}, obj1, obj2)
+//we can combine two objects with spread operator as well
+const obj = {...obj1, ...obj2}
+console.log(obj)
+
+console.log(Object.keys(myObject))
+console.log(Object.values(myObject))
+console.log(Object.entries(myObject))
+
+console.log(myObject.hasOwnProperty('isLoggedIn'))
