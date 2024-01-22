@@ -206,10 +206,22 @@ const obj2 ={
 //const obj = Object.assign({}, obj1, obj2)
 //we can combine two objects with spread operator as well
 const obj = {...obj1, ...obj2}
-console.log(obj)
+// console.log(obj)
 
-console.log(Object.keys(myObject))
-console.log(Object.values(myObject))
-console.log(Object.entries(myObject))
+// console.log(Object.keys(myObject))
+// console.log(Object.values(myObject))
+// console.log(Object.entries(myObject))
 
-console.log(myObject.hasOwnProperty('isLoggedIn'))
+// console.log(myObject.hasOwnProperty('isLoggedIn'))
+
+//Destructuring in js 
+
+const course = {
+    coursename: "js",
+    price: 999,
+    courseInstructor: "Anjana"
+}
+
+const {courseInstructor: instructor} = course
+
+console.log(instructor)
