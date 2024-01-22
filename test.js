@@ -239,7 +239,7 @@ function addTwoNumbers(number1, number2){
 }
 
 const result = addTwoNumbers(5, 6) //It is passing of argument
-console.log(result)
+//console.log(result)
 
 //String function
 
@@ -251,4 +251,19 @@ function LoggedIn(name){
 }
 
 const result2 = LoggedIn("Anjana")
-console.log(result2)
+//console.log(result2)
+
+//Taking multiple argument in function
+
+function addCartPrice(...num1){
+    console.log(num1)   
+}
+//addCartPrice(200, 400, 500, 600)
+/* In the similar way we can fix any number of argument. The fixed argument is must to be passed */
+
+function addPrice(var1, var2, ...num1){
+    console.log(var1, var2)
+    console.log(`variable length argument ${num1}`)
+}
+
+addPrice(200,300,400,500,1000,300,600)
