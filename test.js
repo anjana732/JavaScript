@@ -224,4 +224,31 @@ const course = {
 
 const {courseInstructor: instructor} = course
 
-console.log(instructor)
+//console.log(instructor)
+
+//Functions in js
+
+//Adding two numbers using function
+
+/*function addTwoNumbers(number1, number2){ //It is passing of parameter
+     console.log(number1 + number2)
+}*/
+
+function addTwoNumbers(number1, number2){
+    return number1 + number2
+}
+
+const result = addTwoNumbers(5, 6) //It is passing of argument
+console.log(result)
+
+//String function
+
+function LoggedIn(name){
+    if(!name){
+        console.log("Please enter username")
+    }
+    return `${name} just logged in`
+}
+
+const result2 = LoggedIn("Anjana")
+console.log(result2)
