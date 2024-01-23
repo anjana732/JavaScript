@@ -205,8 +205,7 @@ const obj2 ={
 }
 //const obj = Object.assign({}, obj1, obj2)
 //we can combine two objects with spread operator as well
-const obj = {...obj1, ...obj2}
-// console.log(obj)
+
 
 // console.log(Object.keys(myObject))
 // console.log(Object.values(myObject))
@@ -267,3 +266,17 @@ function addPrice(var1, var2, ...num1){
 }
 
 addPrice(200,300,400,500,1000,300,600)
+
+//Scopes in JS
+
+//Functions in js can be decalared in two ways
+
+console.log(addOne(5))//can be accessed here ........concept of hoisting
+function addOne(num1){
+    return num1+1
+}
+//console.log(addTwo(6)) //can't be accessed here
+const addTwo = function(num1){
+    return num1+2
+}
+console.log(addTwo(6))
