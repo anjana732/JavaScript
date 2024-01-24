@@ -260,9 +260,9 @@ function addCartPrice(...num1){
 //addCartPrice(200, 400, 500, 600)
 /* In the similar way we can fix any number of argument. The fixed argument is must to be passed */
 
-function addPrice(var1, var2, ...num1){
-    console.log(var1, var2)
-    console.log(`variable length argument ${num1}`)
+ function addPrice(var1, var2, ...num1){
+//     console.log(var1, var2)
+//     console.log(`variable length argument ${num1}`)
 }
 
 addPrice(200,300,400,500,1000,300,600)
@@ -271,7 +271,7 @@ addPrice(200,300,400,500,1000,300,600)
 
 //Functions in js can be decalared in two ways
 
-console.log(addOne(5))//can be accessed here ........concept of hoisting
+//console.log(addOne(5))//can be accessed here ........concept of hoisting
 function addOne(num1){
     return num1+1
 }
@@ -279,4 +279,44 @@ function addOne(num1){
 const addTwo = function(num1){
     return num1+2
 }
-console.log(addTwo(6))
+//console.log(addTwo(6))
+
+//flow control
+const num = 10
+if(num == 10){
+    //console.log("success")
+}
+
+//for loop
+for (let index = 1; index <= 10; index++) {
+    if(index==5){
+        //console.log("best number")
+    }
+   // console.log(index);
+    
+}
+
+//printing table using for loop
+for (let i= 1; i<=20; i++) {
+    //console.log(`Table of ${i}`)
+    for (let j= 1; j <=10; j++) {
+        //console.log(`${i} * ${j} = ${i*j}`)
+    }
+    
+}
+
+//use of break and and continue
+
+for (let index = 1; index < 10; index++) {
+    if(index == 5){
+        console.log("detected 5")
+        break
+    }
+    console.log(index)
+}
+for (let index = 1; index < 10; index++) {
+   if(index == 5){
+    console.log("detected 5")
+   }
+    console.log(index)
+}
