@@ -305,7 +305,7 @@ for (let i= 1; i<=20; i++) {
     
 }
 
-//use of break and and continue
+//use of break and and continu
 
 for (let index = 1; index < 10; index++) {
     if(index == 5){
