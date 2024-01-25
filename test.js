@@ -411,4 +411,11 @@ const myNewArray2 = [1,2,3,4,5,6,7,8,9,10]
 
  const chaining = arr2.map((nums) => nums * 10).map((nums) => nums + 1).filter((nums) => nums >= 40)
 
- console.log(chaining)
+ //console.log(chaining)
+
+ //reduce method: contain two argument accumulator and currentValue used to add the elements of array or aobject.
+
+ const arr3 = [1,2,3,5,6]
+ const redRes = arr3.reduce((acc,curr) => acc + curr, 0)
+ console.log(redRes)
+ 
