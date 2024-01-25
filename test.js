@@ -309,14 +309,26 @@ for (let i= 1; i<=20; i++) {
 
 for (let index = 1; index < 10; index++) {
     if(index == 5){
-        console.log("detected 5")
+      //  console.log("detected 5")
         break
     }
-    console.log(index)
+   // console.log(index)
 }
 for (let index = 1; index < 10; index++) {
    if(index == 5){
-    console.log("detected 5")
+   // console.log("detected 5")
    }
-    console.log(index)
+    //console.log(index)
 }
+
+//while loop
+
+let num1 = 1
+while(num1 <= 10){
+  //  console.log(num1)
+    num1++
+}
+let score = 11
+do{
+    console.log(score)
+}while(score<=10)
