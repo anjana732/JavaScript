@@ -375,4 +375,52 @@
    // const bookUser = books.filter((bk) => bk.publishedYear > 2012 )
 
    const bookUser = books.filter((bk) => { return bk.genre == "Fiction" && bk.pages >=200})
-    console.log(bookUser)
+   //console.log(bookUser)
+
+const course = [
+      {
+        "title": "Introduction to Programming",
+        "instructor": "John Doe",
+        "price": 49.99
+      },
+      {
+        "title": "Web Development Fundamentals",
+        "instructor": "Jane Smith",
+        "price": 79.99
+      },
+      {
+        "title": "Data Science Essentials",
+        "instructor": "Alex Johnson",
+        "price": 99.99
+      },
+      {
+        "title": "JavaScript Basics",
+        "instructor": "Sam Williams",
+        "price": 59.99
+      },
+      {
+        "title": "Graphic Design Fundamentals",
+        "instructor": "Emily Davis",
+        "price": 69.99
+      },
+      {
+        "title": "Python for Beginners",
+        "instructor": "Mark Turner",
+        "price": 89.99
+      },
+      {
+        "title": "Mobile App Development",
+        "instructor": "Chris Anderson",
+        "price": 109.99
+      },
+      {
+        "title": "Digital Marketing Strategies",
+        "instructor": "Sophia Taylor",
+        "price": 79.99
+      }
+    ]
+
+    const total = course.reduce((acc,currVal) => acc + currVal.price, 0)
+
+    console.log(total)
+  
