@@ -330,5 +330,32 @@ while(num1 <= 10){
 }
 let score = 11
 do{
-    console.log(score)
+   // console.log(score)
 }while(score<=10)
+
+//foreach loop
+
+const coding = ["java", "python", "php", "javascript", "ruby"]
+
+coding.forEach((item, index, arr)=>{
+    //console.log(item, index, arr)
+})
+
+const myCoding =[
+    {
+        languageName: "java",
+        extension: "java"
+    },
+    {
+        languageName: "python",
+        extension: "py"
+    },
+    {
+        languageName: "javascript",
+        extension: "js"
+    }
+]
+
+myCoding.forEach((item)=>{
+    console.log(item.languageName)
+})
