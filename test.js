@@ -382,13 +382,13 @@ map.set("US","United state of America")
 map.set("fr", "France")
 
 for (const iterator of map) {
-   // console.log(iterator)
+    // console.log(iterator)
 }
 
 //forin loop
 
-for (const key in map) {
+/*for (const [key] in map) {
     console.log(key)
-    //console.log(`${key} value is ${map[key]}`)
-    console.log(`${key} value is ${map[key]}`);
-}
+    console.log(`${key} value is ${map[key]}`)
+   // console.log(`${key} value is ${map[key]}`)
+}*/
