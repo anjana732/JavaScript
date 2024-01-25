@@ -16,7 +16,7 @@
     }
     .list-item{
         color: hsl(208, 100%, 97%); ;
-    }
+    } 
 </style>
 <body class="bg-color">
     <h1 id="heading">This is my heading</h1>
@@ -27,5 +27,18 @@
         <li class="list-item">Three</li>
         <li class="list-item">Four</li>
     </ul>
+    <script>
+        const div = document.createElement('div')
+        console.log(div);
+        div.className = "main"
+        div.id = "main-div"
+        div.setAttribute('title', "mytitle")
+        div.style.backgroundColor = "green"
+        div.style.borderRadius = "12px"
+        const addText = document.createTextNode("Anjana")
+        div.appendChild(addText)
+        document.body.appendChild(div)
+    </script>
 </body>
+
 </html>
