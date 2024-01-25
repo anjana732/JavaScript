@@ -392,3 +392,23 @@ for (const iterator of map) {
     console.log(`${key} value is ${map[key]}`)
    // console.log(`${key} value is ${map[key]}`)
 }*/
+
+const myNewArray2 = [1,2,3,4,5,6,7,8,9,10]
+
+ const myNewArray2Result = myNewArray2.filter((item) => item > 4 )
+
+ //console.log(myNewArray2Result)
+
+ //map function
+
+ const arr2 = [1,2,3,4,5,6,7,8,9]
+
+ const mapResult = arr2.map( (nums) => nums + 10 )
+
+ //console.log(mapResult)
+
+ //chaining of function 
+
+ const chaining = arr2.map((nums) => nums * 10).map((nums) => nums + 1).filter((nums) => nums >= 40)
+
+ console.log(chaining)
