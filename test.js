@@ -357,5 +357,20 @@ const myCoding =[
 ]
 
 myCoding.forEach((item)=>{
-    console.log(item.languageName)
+    //console.log(item.languageName)
 })
+
+//for of loop
+
+const arr1 = [1,2,3,4,5]
+
+for (const iterator of arr1) {
+   // console.log(iterator)
+}
+
+const greetings = "hello world"
+
+for (const iterator of greetings) {
+   // console.log(iterator)
+}
+
