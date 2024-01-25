@@ -374,3 +374,13 @@ for (const iterator of greetings) {
    // console.log(iterator)
 }
 
+//maps in js
+
+const map = new Map()
+map.set("IN", "India")
+map.set("US","United state of America")
+map.set("fr", "France")
+
+for (const iterator of map) {
+    console.log(iterator)
+}
