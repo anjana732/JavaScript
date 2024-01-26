@@ -33,5 +33,10 @@
     const newLi = document.createElement('li')
     newLi.textContent = "typeScript"
     firstLang.replaceWith(newLi)
+
+    //Remove in DOM
+
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
 </script>
 </html>
