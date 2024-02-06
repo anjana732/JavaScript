@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <div class="card">
+        <h2>Github detail</h2>
+        <div class="details">
+
+        </div>
+    </div>
+    <script>
+        const xhr = new XMLHttpRequest();
+        const requestURL = "https://api.github.com/users/anjana732";
+        const displayDetails = document.querySelector('.details');
+        const image = document.createElement('img');
+        xhr.open('GET',requestURL);
+        xhr.onreadystatechange = function(){
+            console.log(xhr.readyState);
+            if(xhr.readyState === 4){
+                const data = JSON.parse(this.responseText);
+                const avatarURL = data.avatar_url;
+                const displayName = data.name;
+                const getFollower = data.followers;
+                const name = document.createElement('p');
+                const followers = document.createElement('p');
+                image.src = avatarURL;
+                displayDetails.appendChild(image);
+                name.innerHTML = displayName;
+                displayDetails.appendChild(name);
+                followers.innerHTML = getFollower;
+                displayDetails.appendChild(followers);
+            }
+        }
+        xhr.send();
+    </script>
+</body>
+</html>
