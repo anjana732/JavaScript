@@ -70,3 +70,35 @@ async function learnPromise(){
 }
 
 learnPromise()
+
+/*fetch("https://api.github.com/users/anjana732").then((data)=>{
+    console.log(JSON(data.followers))}).catch((error)=>{
+        console.log(error)
+    })*/
+
+async function getData(){
+    try {
+        const response = await fetch("https://api.github.com/users/anjana732")
+       // console.log(response)
+        const data = await response.json()
+       // console.log(data)
+    } catch (error) {
+        console.log(error);
+    }
+   
+}
+
+//getData()
+
+//getting data using fetch
+
+fetch("https://api.github.com/users/anjana732")
+.then((response) => {
+    return response.json();
+})
+.then((data)=>{
+    console.log(data)
+})
+.catch((error) => {
+    console.log(error)
+})
