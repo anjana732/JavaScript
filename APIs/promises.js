@@ -4,7 +4,7 @@ const promise1 = new Promise(function(resolve,reject){
         resolve();
     },1000)
 })
-//consuming promise1
+
 
 const consumePromise = promise1.then(()=>{
     console.log("inside consume promise 1");
